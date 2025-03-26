@@ -19,7 +19,7 @@ body{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0 0 1.4rem;
 }
 
@@ -30,7 +30,7 @@ main {
     background: #fff;
     border-radius: 0.8rem;
     border: 0.1rem solid rgb(223, 228, 237);
-    padding: 3.2rem 2.4rem;
+    padding: 2.2rem 2.4rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,7 +53,7 @@ main {
 .input-description {
     height: 3.2rem;
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border-radius: 0.4rem ;
     margin-right: 0.8rem ;
     outline: 0;
@@ -88,7 +88,7 @@ button:hover {
 
 .task-name {
 
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 0.5rem;
@@ -104,7 +104,7 @@ button:hover {
 /* Etiqueta */
 .task-tag {
 
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     color: rgba(177, 186, 203, 1);
     border-radius: 5rem;
     border: 0.1rem solid rgba(177, 186, 203, 1);
@@ -116,7 +116,7 @@ button:hover {
     margin-left: 0.5rem;
     padding-left: 0rem;
     align-self: center;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     color: rgba(177, 186, 203, 1);
     
 }
@@ -159,8 +159,6 @@ button:hover {
     display: flex;
     flex-direction: column;
    
-
-
 }
 
 .tag-date-container {
@@ -175,18 +173,31 @@ button:hover {
     color: rgba(177, 186, 203, 1);
     text-align: right;
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
         
 }
 
 .check-icon {
-    text-align: center;
-    width: 2rem;
-    height: 2rem;
+    display: flex; /* Ativa Flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Garante alinhamento do texto */
+    width: 2.2rem;
+    height: 2.2rem;
     background-color: rgba(0, 216, 167, 1);
     color: rgba(255, 255, 255, 1);
     border-radius: 50%;
-    font-size: 14px;
-    
+    font-size: 1.0rem; /* Ajuste o tamanho da fonte */
+    line-height: 2rem; /* Evita deslocamentos verticais */
+
 }
 
+.tachado {
+    text-decoration: line-through;
+    color: gray; /* Opcional: Deixa o texto mais apagado */
+}
+
+hr {
+    border: none; /* Remove a borda padrão */
+    border-top: 1px solid #ccc; /* Define a cor e espessura da linha */
+}

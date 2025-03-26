@@ -67,6 +67,11 @@ function addtask() {
     completedBtn.addEventListener('click', function () {
     completedBtn.style.display = 'none'; // Esconde o botão
     checkIcon.style.display = 'inline'; // Exibe o ícone de check
+    taskName.classList.add("tachado"); // Adiciona a classe para tachar o texto
+
+    completedTasks++; // Incrementa o número de tarefas concluídas
+    document.getElementById("completedCount").textContent = completedTasks; // Atualiza o contador
+
 });
 
     //Criando o container da tag e data
