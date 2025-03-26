@@ -1,0 +1,167 @@
+html{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Rubik";
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 249, 255, 1);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    overflow: auto;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0 0 1.4rem;
+}
+
+
+main {
+    width: 100%;
+    max-width: 40rem;
+    background: #fff;
+    border-radius: 0.8rem;
+    border: 0.1rem solid rgb(223, 228, 237);
+    padding: 3.2rem 2.4rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização dos itens da lista */
+
+
+/* Linha da Tarefa, Tag e Botão + */
+
+#create-todo-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* Input Tarefa e Etiqueta/tag */
+
+.input-description {
+    height: 3.2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    border-radius: 0.4rem ;
+    margin-right: 0.8rem ;
+    outline: 0;
+    border: 0.1rem solid rgb(223, 228, 237);
+    padding-left: 0.8rem;
+        
+}
+
+/* Botão */
+
+.add-task-btn {
+    box-sizing: border-box;
+    height: 3.2 rem;
+    width: 20%;
+    font-size: 1.3rem;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(45, 112, 253, 1);
+    color: #fff;
+
+
+}
+
+button:hover {
+    opacity: 0.8; 
+}
+
+/* ACIMA ESTÁ OK, NÃO MEXER */
+
+/* Lista */
+
+.task-name {
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+    list-style: none;
+
+}
+
+
+/* Etiqueta */
+.task-tag {
+
+    font-size: 1.1rem;
+    color: #333;
+    
+    
+
+
+}
+
+
+
+.task-date {
+    padding-left: 2rem;
+}
+
+.completed-btn {
+    background-color: rgba(45, 112, 253, 1);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-left: auto;
+    
+}
+
+
+.task-content {
+    display: flex;
+    flex-direction: column; /* Mantém os elementos empilhados */
+    align-items: flex-start; /* Alinha à esquerda */
+
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between; /* Empurra o botão para a direita */
+    align-items: center; /* Alinha verticalmente */
+    padding: 0.8rem;
+    border-bottom: 1px solid #ccc;
+    
+      
+
+}
+
+#task-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+   
+
+
+}
+
+.tag-date-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: #666;
+}
