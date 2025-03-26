@@ -44,6 +44,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 
@@ -57,7 +58,7 @@ main {
     margin-right: 0.8rem ;
     outline: 0;
     border: 0.1rem solid rgb(223, 228, 237);
-    padding-left: 0.8rem;
+    padding-left: 1.6rem;
         
 }
 
@@ -91,7 +92,7 @@ button:hover {
     font-weight: bold;
     color: #333;
     margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Alinha os elementos à esquerda */
@@ -103,29 +104,32 @@ button:hover {
 /* Etiqueta */
 .task-tag {
 
-    font-size: 1.1rem;
-    color: #333;
-    
-    
-
+    font-size: 1.0rem;
+    color: rgba(177, 186, 203, 1);
+    border-radius: 5rem;
+    border: 0.1rem solid rgba(177, 186, 203, 1);
+    padding: 0.4rem;
 
 }
 
-
-
 .task-date {
-    padding-left: 2rem;
+    margin-left: 0.5rem;
+    padding-left: 0rem;
+    align-self: center;
+    font-size: 1.0rem;
+    color: rgba(177, 186, 203, 1);
+    
 }
 
 .completed-btn {
     background-color: rgba(45, 112, 253, 1);
     color: #fff;
     border: none;
-    padding: 5px 10px;
+    padding: 12px 24px;
     cursor: pointer;
-    border-radius: 3px;
-    font-size: 14px;
-    margin-left: auto;
+    border-radius: 4px;
+    font-size: 18px;
+    align-items: center;
     
 }
 
@@ -141,9 +145,10 @@ button:hover {
     display: flex;
     justify-content: space-between; /* Empurra o botão para a direita */
     align-items: center; /* Alinha verticalmente */
-    padding: 0.8rem;
-    border-bottom: 1px solid #ccc;
-    
+    padding: 1rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
       
 
 }
@@ -165,3 +170,23 @@ button:hover {
     font-size: 1.1rem;
     color: #666;
 }
+
+#completed-count{
+    color: rgba(177, 186, 203, 1);
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+        
+}
+
+.check-icon {
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(0, 216, 167, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    font-size: 14px;
+    
+}
+

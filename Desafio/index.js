@@ -91,8 +91,8 @@ function addtask() {
     
     // Montando e adicionado os elementos
 
-    listItem.appendChild(taskName); // Nome da tarefa
-    listItem.appendChild(tagDateContainer); // Container tag e data
+    //listItem.appendChild(taskName); // Nome da tarefa
+    //listItem.appendChild(tagDateContainer); // Container tag e data
     listItem.appendChild(taskContend); //Container name e container tag e data
     listItem.appendChild(completedBtn); // Botão
     listItem.appendChild(checkIcon); //Icone de check
